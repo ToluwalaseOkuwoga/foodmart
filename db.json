@@ -1,0 +1,79 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "full_name": "Toluwalase Okuwoga",
+      "password": "12345",
+      "email": "toluwalaseokuwoga@yahoo.com"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "full_name": "Toluwalase Okuwoga",
+      "password": "12345",
+      "email": "toluwalaseokuwoga@yahoo.com"
+    }
+  ],
+  "userSignup": [
+    {
+      "id": 1,
+      "full_name": "",
+      "password": "",
+      "email": ""
+    }
+  ],
+  "adminSignup": [
+    {
+      "id": 1,
+      "first_name": "",
+      "last_name": "",
+      "password": "",
+      "email": ""
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "foodname": "rice",
+      "category": "main",
+      "imageUrl": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "price": 0
+    },
+    {
+      "foodname": "beans",
+      "category": "main",
+      "imageUrl": "500",
+      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "id": 2
+    },
+    {
+      "foodname": "beans",
+      "category": "main",
+      "imageUrl": "500",
+      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "id": 3
+    },
+    {
+      "foodname": "beans",
+      "category": "main",
+      "imageUrl": "500",
+      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "id": 4
+    },
+    {
+      "foodname": "beans",
+      "category": "main",
+      "imageUrl": "100",
+      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "id": 5
+    },
+    {
+      "foodname": "beans",
+      "category": "main",
+      "imageUrl": "100",
+      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "id": 6
+    }
+  ]
+}
