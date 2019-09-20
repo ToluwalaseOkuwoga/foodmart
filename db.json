@@ -21,6 +21,12 @@
       "full_name": "",
       "password": "",
       "email": ""
+    },
+    {
+      "full_name": "John Smith",
+      "password": "js@gmail.com",
+      "email": "1234",
+      "id": 2
     }
   ],
   "adminSignup": [
@@ -30,50 +36,124 @@
       "last_name": "",
       "password": "",
       "email": ""
+    },
+    {
+      "first_name": "Halima",
+      "last_name": "Hassan",
+      "password": "7899",
+      "email": "hassanh@gmail.com",
+      "id": 2
     }
   ],
   "products": [
     {
-      "id": 1,
-      "foodname": "rice",
+      "foodname": "Jollof rice",
       "category": "main",
-      "imageUrl": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
-      "price": 0
+      "imageUrl": "https://ajantaexpresskitchen.co.uk/wp-content/uploads/2018/05/11-2.jpg",
+      "price": 1500,
+      "id": 1
     },
     {
-      "foodname": "beans",
+      "foodname": "Pounded yam",
       "category": "main",
-      "imageUrl": "500",
-      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "imageUrl": "https://image.shutterstock.com/image-photo/pounded-yam-fufu-tuwo-traditional-260nw-1409516021.jpg",
+      "price": "1000",
       "id": 2
     },
     {
-      "foodname": "beans",
+      "foodname": "Coconut rice",
       "category": "main",
-      "imageUrl": "500",
-      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "imageUrl": "https://i.ytimg.com/vi/uT7v8mp1XRg/hqdefault.jpg",
+      "price": "1500",
       "id": 3
     },
     {
-      "foodname": "beans",
-      "category": "main",
-      "imageUrl": "500",
-      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "foodname": "Goat meat",
+      "category": "meat",
+      "imageUrl": "https://www.caribbeangreenliving.com/wp-content/uploads/2019/03/Roasted-Goat-Meat.jpg",
+      "price": "700",
       "id": 4
     },
     {
-      "foodname": "beans",
-      "category": "main",
-      "imageUrl": "100",
-      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "foodname": "Chicken wings",
+      "category": "meat",
+      "imageUrl": "https://homemadehooplah.com/wp-content/uploads/2018/07/honey-garlic-chicken-wings-1.jpg",
+      "price": "600",
       "id": 5
     },
     {
-      "foodname": "beans",
-      "category": "main",
-      "imageUrl": "100",
-      "price": "https://www.cookingclassy.com/wp-content/uploads/2018/06/coleslaw-recipe-2.jpg",
+      "foodname": "Grilled catfish",
+      "category": "meat",
+      "imageUrl": "https://carolinaliving.com/images/default-source/recipes/grilled-catfish.jpg?sfvrsn=be3f8fb0_2",
+      "price": "700",
       "id": 6
+    },
+    {
+      "foodname": "Stir fry beef",
+      "category": "meat",
+      "imageUrl": "http://scibosnian.com/wp-content/uploads/2017/12/Stir_Fried_Beef_10.jpg",
+      "price": "600",
+      "id": 7
+    },
+    {
+      "foodname": "Afang soup",
+      "category": "soup",
+      "imageUrl": "https://sisijemimah.com/wp-content/uploads/2016/04/Afang-soup-10-1024x683.jpg",
+      "price": "500",
+      "id": 8
+    },
+    {
+      "foodname": "Pepper soup",
+      "category": "soup",
+      "imageUrl": "https://www.youmustgethealthy.com/wp-content/uploads/2019/01/images-4-1.jpeg",
+      "price": "500",
+      "id": 9
+    },
+    {
+      "foodname": "Fries",
+      "category": "sides",
+      "imageUrl": "https://www.seasalt.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/recipes/garlic-oven-fries-garlic-sea-salt-recipe_M.jpg",
+      "price": "500",
+      "id": 10
+    },
+    {
+      "foodname": "Fried plantain",
+      "category": "sides",
+      "imageUrl": "http://enroute.ng/wp-content/uploads/2018/05/Dodo.jpg",
+      "price": "300",
+      "id": 11
+    }
+  ],
+  "cart": [
+    {
+      "userId": "1",
+      "price": "500",
+      "foodname": "beans",
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "price": "0",
+      "foodname": "rice",
+      "id": 15
+    },
+    {
+      "userId": "1",
+      "price": "500",
+      "foodname": "fish",
+      "id": 16
+    },
+    {
+      "userId": "1",
+      "price": "500",
+      "foodname": "stew",
+      "id": 17
+    },
+    {
+      "userId": "1",
+      "price": "500",
+      "foodname": "beans",
+      "id": 18
     }
   ]
 }

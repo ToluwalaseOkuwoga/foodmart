@@ -4,200 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menu</title>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-    }
+    <title>Document</title>
+    <style>
 
-* {
-    box-sizing: border-box;
-}
-
-img {
-    vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left
-and right arrows) */
-.container {
-    position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-.cursor {
-    cursor: pointer;
-}
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-/* Position the next button to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Four columns side by side */
-.column {
-    float:left;
-    width: 25%;
-}
-
-.demo {
-    opacity: .6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-</style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            /* Float four columns side by side */
+            .column {
+              float: left;
+              width: 25%;
+              padding: 0 10px;
+            }
+            
+            /* Remove extra left and right margins, due to padding */
+            .row {margin: 0 -5px;}
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+              }
+            }
+                .card {
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    max-width: 300px;
+                    margin: auto;
+                    text-align: center;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            
+                .price {
+                    color: gray;
+                    font-size: 22px;
+                }
+            
+                .card button {
+                    border: none;
+                    outline: 0;
+                    padding: 12px;
+                    color: white;
+                    background-color: #000;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 18px;
+                }
+            
+                .card button:hover {
+                    opacity: .7;
+                }
+                </style>
 </head>
 <body>
 
-    <h3 style="text-align: center">Menu</h3>
-  <!--Container for the image gallery-->  
-  <div class="container">
+        <nav class="header">
+                <a href="./checkout.html"
+                  ><i class="mdi mdi-cart"><div class="cartCount">1</div></i></a
+                >
+              </nav>
+              <div class="productListing"></div>
+              <div>
+                Cart
+                <div class="count" class="fas fa-cart-plus"></div>
+              </div>
+              
+        <div class="row">
 
-    <!--Full-width images with number text-->
-    <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <a href="./Main.html">
-        <img src="../images/jollof.jpg" style="width: 100%" height="550px">
-    </a>
+<!-- <div class="column">
+<div id="chicken">
+        <div class="card">
+            <img src="../images/honey-garlic-chicken-wings-1.jpg" alt="Chicken" style="width: 100%" height="200px">
+            <h1>Chicken Wings</h1>
+            <p class="price">N1500.00</p>
+            <p><button>Add to cart</button></p>   
+         </div>
     </div>
+</div>
 
-    <div class="mySlides">
-            <div class="numbertext">2 / 4</div>
-            <a href="./Soups.html">
-            <img src="../images/Afang-soup-10-1024x683.jpg" style="width: 100%" height="550px">
-        </a>
+    <div class="column">
+    <div id="Grilledfish">
+            <div class="card">
+                <img src="../images/grilled-catfish.jpg" alt="Grilled Catfish" style="width: 100%" height="200px">
+                <h1>Grlled Cat Fish</h1>
+                <p class="price">N1500.00</p>
+                <p><button>Add to cart</button></p>   
+             </div>
         </div>
+    </div>
 
-        <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <a href="./Meat.html">
-                <img src="../images/honey-garlic-chicken-wings-1.jpg" style="width: 100%" height="550px">
-            </a>
+        <div class="column">
+        <div id="Beef">
+                <div class="card">
+                    <img src="../images/Stir_Fried_Beef_10.jpg" alt="Beef" style="width: 100%" height="200px">
+                    <h1>Stir Fried Beef</h1>
+                    <p class="price">N600.00</p>
+                    <p><button>Add to cart</button></p>   
+                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="mySlides">
-                    <div class="numbertext">4 / 4</div>
-                    <a href="./Sides.html">
-                    <img src="../images/fried plantain.jpg" style="width: 100%" height="550px">
-                </a>
-                </div>
-
-<!--Next and previous buttons-->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-<!--Image text-->
-<div class="caption-container">
-    <p id="caption"></p>
+    <div class="row">
+            <div class="column">
+<div id="Fries">
+<div class="card">
+    <img src="../images/french-fries.jpg" alt="Fries" style="width: 100%" height="200px">
+    <h1>Fries</h1>
+    <p class="price">N500.00</p>
+    <p><button>Add to cart</button></p>   
+ </div>
+</div>
 </div>
 
-<!--Thumbnail images-->
-<div class="row">
-    <div class="column">
-        <img class="demo cursor" src="../images/jollof.jpg" style="width: 100%" height="100px"
-onclick="currentSlide(1)" alt="Main">
-    </div>
+<div class="column">
+<div id="plantain">
+    <div class="card">
+        <img src="../images/fried plantain.jpg" alt="Plantain" style="width: 100%" height="200px">
+        <h1>Fried Plantain</h1>
+        <p class="price">N300.00</p>
+        <p><button>Add to cart</button></p>   
+     </div>
+</div>
+</div>
 
-    <div class="column">
-        <img class="demo cursor" src="../images/Afang-soup-10-1024x683.jpg" style="width: 100%" height="100px"
-onclick="currentSlide(2)" alt="Soups">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/honey-garlic-chicken-wings-1.jpg" style="width: 100%" height="100px"
-onclick="currentSlide(3)" alt="Meat">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/fried plantain.jpg" style="width: 100%" height="100px"
-onclick="currentSlide(4)" alt="Sides">
+<div class="column">
+<div id="moimoi">
+        <div class="card">
+            <img src="../images/moimoi-yoruba-food-nigeria-9jafoodie-recipe-naijafoodie-breakfast--600x398.jpg" alt="Moi moi" style="width: 100%" height="200px">
+            <h1>Moi moi</h1>
+            <p class="price">N300.00</p>
+            <p><button>Add to cart</button></p>   
+         </div>
     </div>
 </div>
-  </div>
 
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
+    <div class="column">
+    <div id="coleslaw">
+            <div class="card">
+                <img src="../images/coleslaw-recipe-2.jpg" alt="Cole slaw" style="width: 100%" height="200px">
+                <h1>Cole Slaw</h1>
+                <p class="price">N300.00</p>
+                <p><button>Add to cart</button></p>   
+             </div>
+        </div>
+    </div>
+</div>
 
-  // Next/previous controls
-  function plusSlides(n) {
-      showSlides(slideIndex += n);
-  }
+    <div class="row">
+            <div class="column">
+    <div id="rice">
+    <div class="card">
+        <img src="../images/jollof.jpg" alt ="Jollof Rice" style="width: 100%" height="200px">
+        <h1>Jollof Rice</h1>
+        <p class="price">N1000.00</p>
+        <p><button>Add to cart</button></p>   
+     </div>
+    </div>
+</div>
 
-  // Thumbnail image controls
-  function currentSlide(n) {
-      showSlides(slideIndex = n);
-  }
+<div class="column">
+<div id="Pounded Yam">
+        <div class="card">
+            <img src="../images/pounded-yam-fufu-tuwo-traditional-260nw-1409516021.jpg" alt="Pounded Yam" style="width: 100%" height="200px">
+            <h1>Pounded Yam</h1>
+            <p class="price">N1000.00</p>
+            <p><button>Add to cart</button></p>   
+         </div>
+        </div>
+    </div>
 
-  function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      var captionText = document.getElementById("caption");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace("active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += "active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
-  }
-  </script>
+    <div class="column">
+    <div id="coconutrice">
+            <div class="card">
+                <img src="../images/coconut.jpg" alt="Coconut Rice" style="width: 100%" height="200px">
+                <h1>Coconut Rice</h1>
+                <p class="price">N1000.00</p>
+                <p><button>Add to cart</button></p>   
+             </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+            <div class="column">
+<div id="Afang">
+    <div class="card">
+        <img src="../images/Afang-soup-10-1024x683.jpg" alt="Afang" style="width: 100%" height="200px">
+        <h1>Afang Soup</h1>
+        <p class="price">N500.00</p>
+        <p><button>Add to cart</button></p>   
+     </div>
+</div>
+</div>
+
+<div class="column">
+<div id="Egusi">
+        <div class="card">
+            <img src="../images/Egusi-soup-2.jpg" alt="Egusi" style="width: 100%" height="200px">
+            <h1>Egusi Soup</h1>
+            <p class="price">N1000.00</p>
+            <p><button>Add to cart</button></p>   
+         </div>
+    </div>
+</div>
+
+    <div class="column">
+    <div id="Pepper soup">
+            <div class="card">
+                <img src="../images/pepper soup.jpeg" alt="Pepper soup" style="width: 100%" height="200px">
+                <h1>Pepper Soup</h1>
+                <p class="price">N1000.00</p>
+                <p><button>Add to cart</button></p>   
+             </div>
+        </div>
+    </div> -->
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/menu.js"></script>
 </body>
 </html>
