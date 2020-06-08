@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            /* Float four columns side by side */
+            .column {
+              float: left;
+              width: 25%;
+              padding: 0 10px;
+            }
+            
+            /* Remove extra left and right margins, due to padding */
+            .row {margin: 0 -5px;}
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+              }
+            }
+                .card {
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    max-width: 300px;
+                    margin: auto;
+                    text-align: center;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            
+                .price {
+                    color: gray;
+                    font-size: 22px;
+                }
+            
+                .card button {
+                    border: none;
+                    outline: 0;
+                    padding: 12px;
+                    color: white;
+                    background-color: #000;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 18px;
+                }
+            
+                .card button:hover {
+                    opacity: .7;
+                }
+                </style>
+</head>
+<body>
+
+        <nav class="header">
+                <a href="./checkout.html"
+                  ><i class="mdi mdi-cart"><div class="cartCount">1</div></i></a
+                >
+              </nav>
+              <div class="productListing"></div>
+              <div>
+                Cart
+                <div class="count" class="fas fa-cart-plus"></div>
+              </div>
+              
+        <div class="row">
+
+<!-- <div class="column">
+<div id="chicken">
+        <div class="card">
+            <img src="../images/honey-garlic-chicken-wings-1.jpg" alt="Chicken" style="width: 100%" height="200px">
+            <h1>Chicken Wings</h1>
+            <p class="price">N1500.00</p>
+            <p><button>Add to cart</button></p>   
+         </div>
+    </div>
+</div>
+
+    <div class="column">
+    <div id="Grilledfish">
+            <div class="card">
+                <img src="../images/grilled-catfish.jpg" alt="Grilled Catfish" style="width: 100%" height="200px">
+                <h1>Grlled Cat Fish</h1>
+                <p class="price">N1500.00</p>
+                <p><button>Add to cart</button></p>   
+             </div>
+        </div>
+    </div>
+
+        <div class="column">
+        <div id="Beef">
+                <div class="card">
+                    <img src="../images/Stir_Fried_Beef_10.jpg" alt="Beef" style="width: 100%" height="200px">
+                    <h1>Stir Fried Beef</h1>
+                    <p class="price">N600.00</p>
+                    <p><button>Add to cart</button></p>   
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="column">
+<div id="Fries">
+<div class="card">
+    <img src="../images/french-fries.jpg" alt="Fries" style="width: 100%" height="200px">
+    <h1>Fries</h1>
+    <p class="price">N500.00</p>
+    <p><button>Add to cart</button></p>   
+ </div>
+</div>
+</div>
+
+<div class="column">
+<div id="plantain">
+    <div class="card">
+        <img src="../images/fried plantain.jpg" alt="Plantain" style="width: 100%" height="200px">
+        <h1>Fried Plantain</h1>
+        <p class="price">N300.00</p>
+        <p><button>Add to cart</button></p>   
+     </div>
+</div>
+</div>
+
+<div class="column">
+<div id="moimoi">
+        <div class="card">
+            <img src="../images/moimoi-yoruba-food-nigeria-9jafoodie-recipe-naijafoodie-breakfast--600x398.jpg" alt="Moi moi" style="width: 100%" height="200px">
+            <h1>Moi moi</h1>
+            <p class="price">N300.00</p>
+            <p><button>Add to cart</button></p>   
+         </div>
+    </div>
+</div>
+
+    <div class="column">
+    <div id="coleslaw">
+            <div class="card">
+                <img src="../images/coleslaw-recipe-2.jpg" alt="Cole slaw" style="width: 100%" height="200px">
+                <h1>Cole Slaw</h1>
+                <p class="price">N300.00</p>
+                <p><button>Add to cart</button></p>   
+             </div>
+        </div>
+    </div>
+</div>
+
+    <div class="row">
+            <div class="column">
+    <div id="rice">
+    <div class="card">
+        <img src="../images/jollof.jpg" alt ="Jollof Rice" style="width: 100%" height="200px">
+        <h1>Jollof Rice</h1>
+        <p class="price">N1000.00</p>
+        <p><button>Add to cart</button></p>   
+     </div>
+    </div>
+</div>
+
+<div class="column">
+<div id="Pounded Yam">
+        <div class="card">
+            <img src="../images/pounded-yam-fufu-tuwo-traditional-260nw-1409516021.jpg" alt="Pounded Yam" style="width: 100%" height="200px">
+            <h1>Pounded Yam</h1>
+            <p class="price">N1000.00</p>
+            <p><button>Add to cart</button></p>   
+         </div>
+        </div>
+    </div>
+
+    <div class="column">
+    <div id="coconutrice">
+            <div class="card">
+                <img src="../images/coconut.jpg" alt="Coconut Rice" style="width: 100%" height="200px">
+                <h1>Coconut Rice</h1>
+                <p class="price">N1000.00</p>
+                <p><button>Add to cart</button></p>   
+             </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+            <div class="column">
+<div id="Afang">
+    <div class="card">
+        <img src="../images/Afang-soup-10-1024x683.jpg" alt="Afang" style="width: 100%" height="200px">
+        <h1>Afang Soup</h1>
+        <p class="price">N500.00</p>
+        <p><button>Add to cart</button></p>   
+     </div>
+</div>
+</div>
+
+<div class="column">
+<div id="Egusi">
+        <div class="card">
+            <img src="../images/Egusi-soup-2.jpg" alt="Egusi" style="width: 100%" height="200px">
+            <h1>Egusi Soup</h1>
+            <p class="price">N1000.00</p>
+            <p><button>Add to cart</button></p>   
+         </div>
+    </div>
+</div>
+
+    <div class="column">
+    <div id="Pepper soup">
+            <div class="card">
+                <img src="../images/pepper soup.jpeg" alt="Pepper soup" style="width: 100%" height="200px">
+                <h1>Pepper Soup</h1>
+                <p class="price">N1000.00</p>
+                <p><button>Add to cart</button></p>   
+             </div>
+        </div>
+    </div> -->
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/menu.js"></script>
+</body>
+</html>
